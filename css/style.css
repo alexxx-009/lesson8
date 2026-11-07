@@ -1,0 +1,478 @@
+:root {
+    --green: #13a052;
+    --darkgreen: #087c3d;
+    --lightgreen: #ddf3e3;
+    --background: #f7fbfd;
+    --white: #ffffff;
+    --black: #0b101d;
+    --text: #33415f;
+    --gray: #b5b7be;
+    --border: #edf5f3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Arimo", sans-serif;
+    background-color: var(--background);
+    color: var(--black);
+}
+.container {
+    width: 90%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.25s, background-color 0.25s, opacity 0.25s;
+}
+a:hover {
+    color: var(--green);
+}
+a:active {
+    color: var(--darkgreen);
+}
+a:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 4px;
+}
+.button {
+    display: inline-block;
+    padding: 20px 36px;
+    border-radius: 30px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 18px;
+    text-align: center;
+}
+.button:hover {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+.button:active {
+    background-color: var(--black);
+    color: var(--white);
+}
+.logo:hover {
+    opacity: 0.7;
+}
+.logo:active {
+    opacity: 0.5;
+}
+.header {
+    padding: 38px 0;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.logo img {
+    width: 179px;
+}
+nav ul {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+}
+.health {
+    background-color: var(--lightgreen);
+}
+.health__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-height: 540px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 60%;
+    padding: 40px 0;
+}
+.left h1 {
+    font-size: 72px;
+    line-height: 1.08;
+}
+.black {
+    display: block;
+    max-width: 420px;
+}
+.green {
+    display: block;
+    color: var(--darkgreen);
+}
+.left p {
+    max-width: 550px;
+    color: var(--text);
+    font-size: 26px;
+    line-height: 1.5;
+}
+.left .button {
+    padding: 21px 28px;
+    font-size: 24px;
+}
+.right {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 468px;
+    align-self: flex-end;
+}
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.traning, .food, .support {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 33.33%;
+    min-height: 194px;
+    padding: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    transition: background-color 0.25s;
+}
+.traning:hover, .food:hover, .support:hover {
+    background-color: var(--lightgreen);
+}
+.benefits img, .lessons img {
+    width: 96px;
+    height: 96px;
+}
+.benefits h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.benefits p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--text);
+}
+.lesson {
+    padding: 64px 0;
+}
+.lesson h2 {
+    max-width: 480px;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+.description {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 32px;
+}
+.lessons {
+    display: flex;
+    gap: 24px;
+}
+.yoga, .power, .cardio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 33.33%;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background-color: var(--white);
+    transition: background-color 0.25s;
+}
+.yoga:hover, .power:hover, .cardio:hover {
+    background-color: var(--lightgreen);
+}
+.lessons h3 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+.lessons p {
+    max-width: 230px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text);
+}
+.time {
+    display: block;
+    margin-top: 8px;
+    color: var(--darkgreen);
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 56px 0;
+}
+.footercontent {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.footerleft p {
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--gray);
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.contacts h3 {
+    font-size: 18px;
+}
+.contacts a, .contacts p, .footerbottom {
+    font-size: 18px;
+    color: var(--gray);
+}
+.contacts .button {
+    color: var(--white);
+}
+.footerbottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 30px;
+    border-top: 1px solid #1b2130;
+}
+.social {
+    display: flex;
+    gap: 28px;
+}
+.social a {
+    color: var(--gray);
+}
+.footer a:hover {
+    color: var(--green);
+}
+.footer a:active {
+    color: var(--white);
+}
+.footer .button:hover {
+    color: var(--white);
+}
+.mobile {
+    display: none;
+}
+@media (max-width: 1100px) {
+    nav ul {
+        gap: 20px;
+    }
+    .left h1 {
+        font-size: 54px;
+    }
+    .black {
+        max-width: 320px;
+    }
+    .left p {
+        font-size: 22px;
+    }
+    .health__container {
+        min-height: 460px;
+    }
+    .traning, .food, .support {
+        padding: 20px;
+        gap: 14px;
+    }
+    .benefits img {
+        width: 64px;
+        height: 64px;
+    }
+    .benefits h2 {
+        font-size: 18px;
+    }
+    .benefits p {
+        font-size: 16px;
+    }
+    .lessons h3 {
+        font-size: 23px;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        padding: 24px 0;
+    }
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .logo img {
+        width: 110px;
+    }
+    .header .button {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        justify-content: space-between;
+        gap: 8px;
+        font-size: 13px;
+    }
+    .health {
+        background-color: var(--background);
+    }
+    .health__container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        min-height: 0;
+    }
+    .left {
+        width: 100%;
+        padding: 24px 12px 0;
+        gap: 16px;
+    }
+    .left h1 {
+        font-size: 32px;
+    }
+    .black {
+        max-width: 200px;
+    }
+    .left p {
+        max-width: 230px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .left .button, .button {
+        padding: 18px 35px;
+        font-size: 18px;
+    }
+    .right {
+        width: 110px;
+        margin-top: -54px;
+        margin-right: 12px;
+    }
+    .benefits {
+        flex-direction: column;
+        gap: 0;
+    }
+    .traning, .food, .support {
+        width: 100%;
+        min-height: 124px;
+        padding: 24px 20px;
+        gap: 20px;
+    }
+    .benefits img, .lessons img {
+        width: 72px;
+        height: 72px;
+    }
+    .benefits h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .benefits p {
+        max-width: 180px;
+        font-size: 16px;
+    }
+    .lesson {
+        padding: 44px 0 30px;
+    }
+    .lesson h2 {
+        max-width: 280px;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+    .description {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .lessons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .yoga, .power, .cardio {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        min-height: 132px;
+        padding: 24px 20px;
+        gap: 20px;
+    }
+    .lessons h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .lessons p {
+        max-width: 180px;
+        font-size: 16px;
+    }
+    .time, .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+    }
+    .footer {
+        width: 90%;
+        margin: 0 auto 24px;
+        padding: 24px;
+        border-radius: 20px;
+    }
+    .footer .container {
+        width: 100%;
+    }
+    .footercontent {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    .footerleft p {
+        max-width: 255px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .contacts {
+        gap: 8px;
+    }
+    .contacts h3, .address, .social {
+        display: none;
+    }
+    .contacts .button {
+        order: -1;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .contacts a {
+        font-size: 14px;
+    }
+    .footerbottom {
+        padding-top: 0;
+        border: none;
+        font-size: 12px;
+    }
+}
+
+.footerlogo {
+    display: inline-block;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+}
+@media (max-width: 767px) {
+    .footerlogo {
+        font-size: 24px;
+    }
+}
